@@ -106,7 +106,7 @@ footer {
 
 .bg-primary {
     background-color: var(--bg-primary);
-    padding: 80px;
+    padding: 60px 0 100px;
 }
 
 .form-container {
