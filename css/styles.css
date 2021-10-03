@@ -1,5 +1,6 @@
 :root {
     --bg-primary: #9D2525;
+    --bg-secondary: #A37070;
     --bg-footer: #3B3B3B;
     --bg-form-container: #CCA8A8;
     --btn-primary: #D96B05;
@@ -12,6 +13,10 @@
 }
 
 body { 
+    background-color: var(--bg-primary);
+}
+
+.slice-2 { 
     background-color: var(--bg-primary);
 }
 
@@ -148,4 +153,23 @@ footer {
 .form-actions {
     margin: 20px 0;
     text-align: center;
+}
+
+.caption {
+    display: block;
+    width: 80%;
+    text-align: center;
+    padding: 0 0 12px 0;
+}
+
+.column-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+img {
+    width: 80%;
+    height: 80%;
 }
