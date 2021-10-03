@@ -160,6 +160,7 @@ footer {
     width: 80%;
     text-align: center;
     padding: 0 0 12px 0;
+    color: white;
 }
 
 .column-container {
@@ -172,4 +173,38 @@ footer {
 img {
     width: 80%;
     height: 80%;
+    padding: 0 0 15px 0;
+}
+
+.btn-parental-12 {
+    background-color: #FFC700;
+    height: 60px;
+    width: 60px;
+    border-radius: 12px;
+    border-color: #FFC700;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.btn-parental-14 {
+    background-color: #D96B05;
+    height: 60px;
+    width: 60px;
+    border-radius: 12px;
+    border-color: #D96B05;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.btn-parental-16 {
+    background-color: #FF0000;
+    height: 60px;
+    width: 60px;
+    border-radius: 12px;
+    border-color: #FF0000;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
 }
