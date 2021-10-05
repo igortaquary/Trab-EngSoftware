@@ -7,6 +7,7 @@
     <title>Teatralis</title>
 
     <link type="text/css" rel="stylesheet" href="../css/styles.css" />
+    <script src="../js/index.js"></script>
 </head>
 <body class="body">
     <!-- Header Start -->
@@ -18,7 +19,7 @@
             <nav class="col-6">
                 <ul class="nav-menu">
                     <li><a class="btn-link" href="./tickets.html">Gerenciar Entidades</a></li>
-                    <li><a class="btn-link" href="./sign-up.html">Minha Conta</a></li>
+                    <li><a class="btn-link" href="./minhaconta.html">Minha Conta</a></li>
                 </ul>
             </nav>
         </div>
@@ -31,13 +32,13 @@
         
         <div class="column">
             <button class="menu-btn" type="button">
-                <a href="./pecas.html">Editar Dados</a>
+                <a href="./editar_conta.html">Editar Dados</a>
             </button>
         </div>
 
         <div class="column">
-            <button class="menu-btn" type="button">
-                <a href="./pecas.html">Excluir Conta</a>
+            <button class="menu-btn" type="button" onclick="handleDeleteAccount()">
+                <a href="#">Excluir Conta</a>
             </button>
         </div>
 

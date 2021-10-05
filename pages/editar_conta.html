@@ -8,7 +8,7 @@
 
     <link type="text/css" rel="stylesheet" href="../css/styles.css" />
 </head>
-<body class="body">
+<body>
     <!-- Header Start -->
     <header>
         <div class="row container">
@@ -17,34 +17,39 @@
             </h1>
             <nav class="col-6">
                 <ul class="nav-menu">
-                    <li><a class="btn-link" href="./tickets.html">Gerenciar Entidades</a></li>
-                    <li><a class="btn-link" href="./sign_up.html">Minha Conta</a></li>
+                    <li><a class="btn-link" href="./index.html">Voltar</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <!-- Header End -->
 
-    <div class="menu-container">
-        <h2 class="form-title">Gerenciar Entidades</h2>
-        <br>
-        
-        <div class="column">
-            <button class="menu-btn" type="button">
-                <a href="./criar_entidade.html">Criar Entidade</a>
-            </button>
-        </div>
-
-        <div class="column">
-            <button class="menu-btn" type="button">
-                <a href="./forms/inserir_identificador_editar.html">Editar Entidade</a>
-            </button>
-        </div>
-
-        <div class="column">
-            <button class="menu-btn" type="button">
-                <a href="./forms/inserir_identificador_excluir.html">Excluir Entidade</a>
-            </button>
+    <div class="bg-primary">
+        <div class="form-container">
+            <h2 class="form-title">Editar minha conta</h2>
+            <form >
+                <div class="row">
+                    <div class="col-6">
+                        <label for="nome">Nome*</label>
+                        <input name="nome" type="text" required/>
+                        <label for="senha">Senha*</label>
+                        <input name="senha" type="password"  required/>
+                        <label for="telefone">Telefone</label>
+                        <input name="telefone" type="tel" />
+                    </div>
+                    <div class="col-6">
+                        <label for="sobrenome">Sobrenome</label>
+                        <input name="sobrenome" type="text" />
+                        <label for="email">E-mail*</label>
+                        <input name="email" type="text" required/>
+                        <label for="cargo">Cargo*</label>
+                        <input name="cargo" type="text" required/>
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button class="btn-primary" type="submit">Salvar</button> 
+                </div>
+            </form>
         </div>
     </div>
 
