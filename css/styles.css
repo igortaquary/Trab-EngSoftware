@@ -1,5 +1,6 @@
 :root {
     --bg-primary: #9D2525;
+    --bg-secondary: #A37070;
     --bg-footer: #3B3B3B;
     --bg-form-container: #CCA8A8;
     --btn-primary: #D96B05;
@@ -12,6 +13,10 @@
 }
 
 body { 
+    background-color: var(--bg-primary);
+}
+
+.slice-2 { 
     background-color: var(--bg-primary);
 }
 
@@ -148,4 +153,80 @@ footer {
 .form-actions {
     margin: 20px 0;
     text-align: center;
+}
+
+.caption {
+    display: block;
+    width: 80%;
+    text-align: center;
+    padding: 0 0 12px 0;
+    color: white;
+}
+
+.column-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+img {
+    width: 80%;
+    height: 80%;
+    padding: 0 0 15px 0;
+}
+
+.btn-parental-12 {
+    background-color: #FFC700;
+    height: 60px;
+    width: 60px;
+    border-radius: 12px;
+    border-color: #FFC700;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.btn-parental-14 {
+    background-color: #D96B05;
+    height: 60px;
+    width: 60px;
+    border-radius: 12px;
+    border-color: #D96B05;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.btn-parental-16 {
+    background-color: #FF0000;
+    height: 60px;
+    width: 60px;
+    border-radius: 12px;
+    border-color: #FF0000;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.menu-container {
+    width: 400px;
+    height: 430px;
+    margin: 60px 0 200px 750px;
+    background: #732A2A;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-btn {
+    width: 200px;
+    height: 45px;
+    background: #A37070;
+    border: #A37070;
+    font-size: 16px;
+    color:white;
+    margin: 10px 0 35px 0;
 }
