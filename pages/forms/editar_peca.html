@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teatralis</title>
 
-    <link type="text/css" rel="stylesheet" href="../css/styles.css" />
+    <link type="text/css" rel="stylesheet" href="../../css/styles.css" />
     <script src="../js/index.js"></script> 
 </head>
 <body>
@@ -18,7 +18,7 @@
             </h1>
             <nav class="col-6">
                 <ul class="nav-menu">
-                    <li><a class="btn-link" href="./index.html">Voltar</a></li>
+                    <li><a class="btn-link" href="./index_auth.html">Voltar</a></li>
                 </ul>
             </nav>
         </div>
@@ -28,14 +28,32 @@
 
     <div class="bg-primary">
         <div class="form-container">
-            <h2 class="form-title">Digite sua matrícula e senha</h2>
-            <form onsubmit="return login()">
-                <label for="matricula">Matricula</label>
-                <input name="matricula" type="text" required/>
-                <label for="senha">Senha</label>
-                <input name="senha" type="password" required/>
+            <h2 class="form-title">Editar peça</h2>
+            <form onsubmit="{window.location.href = '../index_auth.html'; return false;}">
+                <div class="row">
+                    <div class="col-6">
+                        <label for="nome">Nome</label>
+                        <input name="nome" type="text"/>
+                        <label for="tipo">Tipo de peça</label>
+                        <select name="tipo" style="display: block;">
+                            <option>auto</option>
+                            <option>comédia</option>
+                            <option>drama</option>
+                            <option>farsa</option>
+                            <option>melodrama</option>
+                            <option>monólogo</option>
+                            <option>musical</option>
+                            <option>ópera</option>
+                            <option>revista</option>
+                        </select>
+                    </div>
+                    <div class="col-6">
+                        <label for="classificacao">Classificação</label>
+                        <input name="classificacao" type="number"/>
+                    </div>
+                </div>
                 <div class="form-actions">
-                    <button class="btn-primary" type="submit">Autenticar</button> 
+                    <button class="btn-primary" type="submit">Editar</button> 
                 </div>
             </form>
         </div>

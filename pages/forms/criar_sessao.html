@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teatralis</title>
 
-    <link type="text/css" rel="stylesheet" href="../css/styles.css" />
+    <link type="text/css" rel="stylesheet" href="../../css/styles.css" />
     <script src="../js/index.js"></script> 
 </head>
 <body>
@@ -18,7 +18,7 @@
             </h1>
             <nav class="col-6">
                 <ul class="nav-menu">
-                    <li><a class="btn-link" href="./index.html">Voltar</a></li>
+                    <li><a class="btn-link" href="./index_auth.html">Voltar</a></li>
                 </ul>
             </nav>
         </div>
@@ -28,14 +28,26 @@
 
     <div class="bg-primary">
         <div class="form-container">
-            <h2 class="form-title">Digite sua matrícula e senha</h2>
-            <form onsubmit="return login()">
-                <label for="matricula">Matricula</label>
-                <input name="matricula" type="text" required/>
-                <label for="senha">Senha</label>
-                <input name="senha" type="password" required/>
+            <h2 class="form-title">Criar sessão</h2>
+            <form onsubmit="{window.location.href = '../index_auth.html'; return false;}"">
+                <div class="row">
+                    <div class="col-6">
+                        <label for="peca">Identificador da peça</label>
+                        <input name="peca" type="text"/>
+                        <label for="data">Data</label>
+                        <input name="data" type="date"/>
+                        <label for="assentos">Número de assentos</label>
+                        <input name="assentos" type="number"/>
+                    </div>
+                    <div class="col-6">
+                        <label for="sala">Identificador da sala</label>
+                        <input name="sala" type="text"/>
+                        <label for="horario">Horário</label>
+                        <input name="horario" type="time"/>
+                    </div>
+                </div>
                 <div class="form-actions">
-                    <button class="btn-primary" type="submit">Autenticar</button> 
+                    <button class="btn-primary" type="submit">Criar</button> 
                 </div>
             </form>
         </div>

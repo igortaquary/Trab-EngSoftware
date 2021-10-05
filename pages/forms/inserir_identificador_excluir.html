@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teatralis</title>
 
-    <link type="text/css" rel="stylesheet" href="../css/styles.css" />
+    <link type="text/css" rel="stylesheet" href="../../css/styles.css" />
+    <script src="../../js/index.js"></script> 
 </head>
 <body>
     <!-- Header Start -->
@@ -17,14 +18,26 @@
             </h1>
             <nav class="col-6">
                 <ul class="nav-menu">
-                    <li><a class="btn-link" href="./tickets.html">Ingressos</a></li>
-                    <li><a class="btn-link" href="./sign_up.html">Registrar</a></li>
-                    <li><a class="btn-link" href="./login.html">Autenticar</a></li>
+                    <li><a class="btn-link" href="./index_auth.html">Voltar</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <!-- Header End -->
+
+
+    <div class="bg-primary">
+        <div class="form-container">
+            <h2 class="form-title">Digite o identificador da entidade que deseja excluir</h2>
+            <form onsubmit="return confirmDelete()">
+                <label for="identificador">Identificador</label>
+                <input id="form-id" name="identificador" type="text" required/>
+                <div class="form-actions">
+                    <button class="btn-primary" type="submit">Excluir</button> 
+                </div>
+            </form>
+        </div>
+    </div>
 
     <!-- Footer Start -->
     <footer>
